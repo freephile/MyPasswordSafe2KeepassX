@@ -1,0 +1,40 @@
+
+XML converter from MyPasswordSafe to KeePassX XML format
+
+@author Greg Rundlett <greg@freephile.com>
+@copyright 2009 - 2010 GNU Public License v3.0 or later
+
+@version 1.0
+
+This file is part of MyPasswordSafe2KeypassX
+
+ MyPasswordSafe2KeypassX is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ MyPasswordSafe2KeypassX is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with MyPasswordSafe2KeypassX.  See the file named 'COPYING'
+ If not, see <http://www.gnu.org/licenses/>.
+
+
+REQUIREMENTS
+You'll need XML_Beautifier to pretty print the xml
+@see http://pear.php.net/manual/en/package.xml.xml-beautifier.php
+
+USAGE
+#1 export your MyPasswordSafe to XML, saving the output as 'passwords.xml'
+#2 Using the command-line interpreter for PHP ("the cli"), invoke the converter
+and redirecting output to a file of your choice
+e.g. php -f converter.php > converted.passwords.xml
+#3 Now open KeyPassX and import the file from #2.  Save and you're done.
+
+CONFIGURATION
+
+ You simply need to tell the script where your password data file is 
+ (the output from step #1) 
